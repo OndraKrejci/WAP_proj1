@@ -6,7 +6,7 @@ if [ ! -d "node_modules" ]; then
 fi
 
 if [ $# -gt 0 ] && [ "$1" = "--install" ]; then
-	npm install mocha chai
+	npm install jsdoc
 else
-	./node_modules/mocha/bin/mocha -u tdd tests.mjs
+	./node_modules/jsdoc/jsdoc.js -c conf.json tree.mjs
 fi
