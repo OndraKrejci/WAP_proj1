@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd "$(dirname "$0")"
+
 # create node_modules if it does not exists (instead of `npm init`)
 if [ ! -d "node_modules" ]; then
 	mkdir node_modules
