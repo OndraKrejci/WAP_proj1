@@ -10,5 +10,5 @@ fi
 if [ $# -gt 0 ] && [ "$1" = "--install" ]; then
 	npm install jsdoc
 else
-	./node_modules/jsdoc/jsdoc.js -c conf.json tree.mjs
+	node ./node_modules/jsdoc/jsdoc.js -c conf.json tree.mjs
 fi

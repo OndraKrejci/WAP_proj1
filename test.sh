@@ -10,5 +10,5 @@ fi
 if [ $# -gt 0 ] && [ "$1" = "--install" ]; then
 	npm install mocha chai
 else
-	./node_modules/mocha/bin/mocha -u tdd tests.mjs
+	node ./node_modules/mocha/bin/mocha -u tdd tests.mjs
 fi
