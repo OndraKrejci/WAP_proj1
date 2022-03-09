@@ -3,4 +3,5 @@ main.mjs
 
 *.json
 
+node_modules/
 out/
