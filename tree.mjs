@@ -6,14 +6,10 @@
  * WAP Project 1
  */
 
-/**
- * @module tree
- */
-
 export {Tree};
 
 /**
- * Constructs an empty binary search tree using the given compare function
+ * Constructs an empty binary search tree using the given comparison function
  * @constructor
  * @see {@link https://www.digitalocean.com/community/tutorials/js-objects-prototypes-classes}
  * @param {compareFn} compare comparison function for inserted values
@@ -36,9 +32,9 @@ function Tree(compare){
 */
 
 /**
- * Inserts a new value to the empty tree
- * Changes the prototype to {@link FullTree}
- * Sets the left and right child to new empty trees
+ * Inserts a new value to the empty tree.
+ * Changes the prototype to {@link FullTree}.
+ * Sets the left and right child to new empty trees.
  * @param {*} value
  */
 Tree.prototype.insertValue = function(value) {
@@ -76,9 +72,9 @@ Tree.prototype.postorder = function*() {
 	return;
 };
 
-
 /**
- * Constructs a binary search tree using the given compare function and initial value
+ * Constructs a binary search tree using the given comparison function and initial value
+ * @constructor
  * @param {compareFn} compare comparison function for inserted values
  * @param {*} value value of the tree's root node
  * @returns {FullTree}
@@ -135,10 +131,10 @@ FullTree.prototype.postorder = function*() {
 };
 
 
-// Simple implementation of the tree with multiple conditions
+//// Simple implementation of the tree with multiple conditions
 
 /**
- * Constructs an empty binary search tree using the given compare function
+ * Constructs an empty binary search tree using the given comparison function
  * @constructor
  * @param {compareFn} compare comparison function for inserted values
  * @returns {BasicTree}
