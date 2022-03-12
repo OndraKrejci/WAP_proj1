@@ -144,8 +144,8 @@ describe('Tree', () => {
 	
 	describe('Reference test', () => {
 		it('Check output of test.mjs', () => {
-			const test_script = join(ROOT_DIR, 'test.mjs'); // https://www.fit.vutbr.cz/study/courses/WAP/private/proj/2022/test.mjs
-			const test_output = join(ROOT_DIR, 'test.out'); // https://www.fit.vutbr.cz/study/courses/WAP/private/proj/2022/v%C3%BDstup
+			const test_script = join(ROOT_DIR, 'reftest.mjs'); // https://www.fit.vutbr.cz/study/courses/WAP/private/proj/2022/test.mjs
+			const test_output = join(ROOT_DIR, 'reftest.out'); // https://www.fit.vutbr.cz/study/courses/WAP/private/proj/2022/v%C3%BDstup
 
 			const ref_output = readFileSync(test_output, {encoding: 'utf-8'});
 
