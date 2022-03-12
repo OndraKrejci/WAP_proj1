@@ -46,7 +46,7 @@ Tree.prototype.insertValue = function(value) {
 }
 
 /**
- * Traverses the tree in preorder
+ * Preorder traversal of the tree
  * @note The generator is always empty
  * @yields {*} next value from the tree in preorder traversal
  */
@@ -55,7 +55,7 @@ Tree.prototype.preorder = function*() {
 };
 
 /**
- * Traverses the tree in inorder
+ * Inorder traversal of the tree
  * @note The generator is always empty
  * @yields {*} next value from the tree in inorder traversal
  */
@@ -64,7 +64,7 @@ Tree.prototype.inorder = function*() {
 };
 
 /**
- * Traverses the tree in postorder
+ * Postorder traversal of the tree
  * @note The generator is always empty
  * @yields {*} next value from the tree in postorder traversal
  */
@@ -101,7 +101,7 @@ FullTree.prototype.insertValue = function(value) {
 }
 
 /**
- * Traverses the tree in preorder
+ * Preorder traversal of the tree
  * @yields {*} next value from the tree in preorder traversal
  */
 FullTree.prototype.preorder = function*() {
@@ -111,7 +111,7 @@ FullTree.prototype.preorder = function*() {
 };
 
 /**
- * Traverses the tree in inorder
+ * Inorder traversal of the tree
  * @yields {*} next value from the tree in inorder traversal
  */
 FullTree.prototype.inorder = function*() {
@@ -121,7 +121,7 @@ FullTree.prototype.inorder = function*() {
 };
 
 /**
- * Traverses the tree in postorder
+ * Postorder traversal of the tree
  * @yields {*} next value from the tree in postorder traversal
  */
 FullTree.prototype.postorder = function*() {
@@ -166,7 +166,7 @@ BasicTree.prototype.insertValue = function(value) {
 }
 
 /**
- * Traverses the tree in preorder
+ * Preorder traversal of the tree
  * @yields {*} next value from the tree in preorder traversal
  */
 BasicTree.prototype.preorder = function*() {
@@ -179,7 +179,7 @@ BasicTree.prototype.preorder = function*() {
 };
 
 /**
- * Traverses the tree in inorder
+ * Inorder traversal of the tree
  * @yields {*} next value from the tree in inorder traversal
  */
 BasicTree.prototype.inorder = function*() {
@@ -192,7 +192,7 @@ BasicTree.prototype.inorder = function*() {
 };
 
 /**
- * Traverses the tree in postorder
+ * Postorder traversal of the tree
  * @yields {*} next value from the tree in postorder traversal
  */
 BasicTree.prototype.postorder = function*() {
