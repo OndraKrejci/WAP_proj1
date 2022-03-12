@@ -2,13 +2,13 @@
 
 cd "$(dirname "$0")"
 
-# create node_modules if it does not exists (instead of `npm init`)
-if [ ! -d "node_modules" ]; then
-	mkdir node_modules
-fi
 
-if [ $# -gt 0 ] && [ "$1" = "--install" ]; then
+if [ $# -gt 0 ] && [ "$1" = "--install" -o "$1" = "install" ]; then
+	if [ ! -d "node_modules" ]; then
+		npm init -y
+	fi
+
 	npm install jsdoc
 else
-	node ./node_modules/jsdoc/jsdoc.js -c conf.json tree.mjs
+	npx --no-install jsdoc -c conf.json tree.mjs
 fi
